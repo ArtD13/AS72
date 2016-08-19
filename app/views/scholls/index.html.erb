@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Scholls</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Adress</th>
+      <th>Phone</th>
+      <th>Category</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @scholls.each do |scholl| %>
+      <tr>
+        <td><%= scholl.name %></td>
+        <td><%= scholl.adress %></td>
+        <td><%= scholl.phone %></td>
+        <td><%= scholl.category %></td>
+        <td><%= scholl.body %></td>
+        <td><%= link_to 'Show', scholl %></td>
+        <td><%= link_to 'Edit', edit_scholl_path(scholl) %></td>
+        <td><%= link_to 'Destroy', scholl, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Scholl', new_scholl_path %>

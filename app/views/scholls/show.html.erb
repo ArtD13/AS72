@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @scholl.name %>
+</p>
+
+<p>
+  <strong>Adress:</strong>
+  <%= @scholl.adress %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @scholl.phone %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @scholl.category %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @scholl.body %>
+</p>
+
+<%= link_to 'Edit', edit_scholl_path(@scholl) %> |
+<%= link_to 'Back', scholls_path %>
