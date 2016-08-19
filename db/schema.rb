@@ -25,14 +25,4 @@ ActiveRecord::Schema.define(version: 20160819042133) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "schools", force: :cascade do |t|
-    t.string   "name"
-    t.string   "adress"
-    t.string   "phone"
-    t.string   "category"
-    t.text     "body"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-end
+ end

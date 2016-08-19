@@ -28,7 +28,7 @@ class SchollsController < ApplicationController
 
     respond_to do |format|
       if @scholl.save
-        format.html { redirect_to @scholl, notice: 'Scholl was successfully created.' }
+        format.html { redirect_to @scholl, notice: 'Новая автошкола успешно добавлена.' }
         format.json { render :show, status: :created, location: @scholl }
       else
         format.html { render :new }
